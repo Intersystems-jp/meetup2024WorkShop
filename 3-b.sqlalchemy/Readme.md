@@ -664,7 +664,7 @@ SQL入力欄の下に表が表示され、先ほど登録したレコードが�
 ```Python
 >>> with Session(Engine) as session:
 ...     c = session.get(Customer,1111)
-...     p1 = Product(productCode='AA-0001',prductName='プロジェクター',price=15000)
+...     p1 = Product(productCode='AA-0001',productName='プロジェクター',price=15000)
 ...     p2 = Product(productCode='AB-0001', productName='プロジェクター設置台',price=10000)
 ...     t = Transactions(customer=c)
 ...     i1 = TransactionItem(product=p1,unitPrice=12000,quantity=3)
@@ -697,7 +697,7 @@ Transactions クラスの dateTimeプロパティには登録日時が入りま�
 ```Python
 >>> t = session.get(Transactions,1)
 >>> session.delete(t)
->>> session.commit(t)
+>>> session.commit()
 ```
 
 ## 7. 顧客情報メンテナンスの作成
