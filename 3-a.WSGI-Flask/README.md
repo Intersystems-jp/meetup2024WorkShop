@@ -327,13 +327,14 @@ render_template によりproducts.htmlをテンプレートとして利用し、
 
 #### products.htmlの作成
 
+Flaskのテンプレートエンジンはtemplatesフォルダ配下にテンプレート(html)を見にいくため、
 templatesフォルダを作成し、その配下にproducts.htmlを作成します。
 
 つまりディレクトリ構成は、下記のようにします。
-
-    shopping.py
-    └── templates
-        └── products.html
+               
+        ├── shopping.py       
+        └── templates/        
+            └── products.html 
 
 products.htmlを次のように作成します。
 
