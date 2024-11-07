@@ -9,7 +9,7 @@ IRIS 2024.1 には、Pytyhon WSGIに準拠するWebアプリケーションを�
 # 目次
 
 - [1. WSGIとは](#1-wsgi-とは)
-- [2. WSGI準拠のWebフレームワーク Flask](#2-wsgi準拠のwebフレームワーク-flask)
+- [2. WSGI準拠のWebフレームワーク Flask](#2-wsgi準拠のwebフレームワーク)
 - [3. IRISへWebアプリケーションをデプロイ](#3-irisへwebアプリケーションをデプロイ)
 - [4. データベースの準備](#4-データベースの準備)
 - [5. ショッピングWebアプリケーションの実装](#5-ショッピングwebアプリケーションの実装)
@@ -38,13 +38,7 @@ IRIS 2024.1では、DjangoやFlaskといったWSGIに準拠するWebアプリケ
 
 [Flask](https://flask.palletsprojects.com/en/stable/) は、WSGIに準拠した Python Webフレームワークです。シンプルな設計でありながら、多くの拡張機能により、Webアプリケーションに必要な機能を追加できるのが特徴で、人気のあるWebフレームワークの一つです。
 
-さっそくFlaskをインストールしてみましょう。
-
-### Flaskのインストール
-
-pipを利用して、flaskをインストールします
-
-        pip install --target /(IRISインストールディレクトリ)/mgr/python flask
+さっそくですが、環境準備 ([記事](https://jp.community.intersystems.com/post/%E7%AC%AC2%E5%9B%9E-%E9%96%8B%E7%99%BA%E8%80%85%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9F%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97-python-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%81%AE%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)、[コメント](https://jp.community.intersystems.com/post/%E7%AC%AC2%E5%9B%9E-%E9%96%8B%E7%99%BA%E8%80%85%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9F%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97-python-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%81%AE%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6#comment-273661)) でインストールしていただいたFlaskを動かしてみましょう。
 
 ### インストールの確認
 
