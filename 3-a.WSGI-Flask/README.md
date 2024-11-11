@@ -167,7 +167,7 @@ IRIS管理ポータルより、
 Webブラウザで動作確認します。
 
 - (baseURL)/shopping/ にアクセスし、"Hello MeetUp!" と表示されることを確認します。
-  - baseURLはインスタンスのベースとなるURLです。たとえば、管理ポータルへのTOPページへ http://localhost/iris/csp/sys/UtilHome.csp でアクセスするとき、http://localhost/iris と置き換えてください。つまり上記の場合、http://localhost/iris/shopping/ となります。
+  - baseURLはインスタンスのベースとなるURLです。たとえば、管理ポータルへのTOPページへのURLが http://localhost/iris/csp/sys/UtilHome.csp である場合、http://localhost/iris と置き換えてください。この場合、最終的なURLは http://localhost/iris/shopping/ となります。
 
 - (baseURL)/shopoping/product/Z123 にアクセスし、"製品コード: Z123 の・・" と表示されることを確認します。
 
