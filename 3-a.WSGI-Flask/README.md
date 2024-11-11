@@ -166,9 +166,10 @@ IRIS管理ポータルより、
 
 Webブラウザで動作確認します。
 
-- (サーバーURL)/shopping/ にアクセスし、"Hello MeetUp!" と表示されることを確認します。
+- (baseURL)/shopping/ にアクセスし、"Hello MeetUp!" と表示されることを確認します。
+  - baseURLはインスタンスのベースとなるURLです。たとえば、管理ポータルへのTOPページへ http://localhost/iris/csp/sys/UtilHome.csp でアクセスするとき、http://localhost/iris と置き換えてください。つまり上記の場合、http://localhost/iris/shopping/ となります。
 
-- (サーバーURL)/shopoping/product/Z123 にアクセスし、"製品コード: Z123 の・・" と表示されることを確認します。
+- (baseURL)/shopoping/product/Z123 にアクセスし、"製品コード: Z123 の・・" と表示されることを確認します。
 
 これで、IRISにFlaskで作成したWebアプリケーションをデプロイし、動作することが確認できました。
 
@@ -379,7 +380,7 @@ IRIS 2024.2以降で "3. IRISへWebアプリをデプロイ" で "デバッグ"�
 
 Webブラウザで動作確認します。
 
-・(サーバーURL)/shopping/products にアクセスします。
+・(baseURL)/shopping/products にアクセスします。
 
 製品の一覧が表示され、製品コード、製品名、金額が表示されることを確認します。
 
@@ -642,8 +643,8 @@ submitボタン(ここでは"カートに入れる"ボタン)が押下された�
 ### Webブラウザで確認
 
 
- (サーバーURL)/shopping/products にアクセスします。
- 
+ (baseURL)/shopping/products にアクセスします。
+
 - カートへの追加、カートの表示、支払処理を試してみてください。
 - 支払い処理を行うと、取引テーブル、取引明細テーブルにデータが生成されます。
 データベースにアクセスし、取引テーブル(Transactions)、取引明細テーブル(TransactionItem)にデータが登録されていることを確認してみてください。
